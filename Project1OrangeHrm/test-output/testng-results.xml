@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-29T14:48:06 IST" name="Default suite" finished-at="2023-11-29T14:49:06 IST" duration-ms="59760">
+    <groups>
+    </groups>
+    <test started-at="2023-11-29T14:48:06 IST" name="Default test" finished-at="2023-11-29T14:49:06 IST" duration-ms="59760">
+      <class name="TestNgOrange.TestOrangeHRM">
+        <test-method is-config="true" signature="launchrome()[pri:0, instance:TestNgOrange.TestOrangeHRM@5c80cf32]" started-at="2023-11-29T14:47:51 IST" name="launchrome" finished-at="2023-11-29T14:48:06 IST" duration-ms="14868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchrome -->
+        <test-method signature="lauchFirefox()[pri:1, instance:TestNgOrange.TestOrangeHRM@5c80cf32]" started-at="2023-11-29T14:48:06 IST" name="lauchFirefox" finished-at="2023-11-29T14:48:26 IST" duration-ms="19680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lauchFirefox -->
+        <test-method signature="lauchEdge()[pri:2, instance:TestNgOrange.TestOrangeHRM@5c80cf32]" started-at="2023-11-29T14:48:26 IST" name="lauchEdge" finished-at="2023-11-29T14:48:42 IST" duration-ms="15453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lauchEdge -->
+        <test-method signature="lauchBrowse()[pri:3, instance:TestNgOrange.TestOrangeHRM@5c80cf32]" started-at="2023-11-29T14:48:42 IST" name="lauchBrowse" finished-at="2023-11-29T14:48:53 IST" duration-ms="11636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lauchBrowse -->
+        <test-method signature="loginProcess()[pri:4, instance:TestNgOrange.TestOrangeHRM@5c80cf32]" started-at="2023-11-29T14:48:53 IST" name="loginProcess" finished-at="2023-11-29T14:49:00 IST" duration-ms="6561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginProcess -->
+        <test-method signature="directory()[pri:5, instance:TestNgOrange.TestOrangeHRM@5c80cf32]" started-at="2023-11-29T14:49:00 IST" name="directory" finished-at="2023-11-29T14:49:06 IST" duration-ms="6005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- directory -->
+        <test-method signature="selectJobTitleFromDropdown()[pri:7, instance:TestNgOrange.TestOrangeHRM@5c80cf32]" started-at="2023-11-29T14:49:06 IST" name="selectJobTitleFromDropdown" finished-at="2023-11-29T14:49:06 IST" duration-ms="62" status="FAIL">
+          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
+            <message>
+              <![CDATA[Element should have been "select" but was "div"
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "div"
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:46)
+at TestNgOrange.TestOrangeHRM.selectJobTitleFromDropdown(TestOrangeHRM.java:94)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectJobTitleFromDropdown -->
+        <test-method signature="selectLocationFromDropdown()[pri:8, instance:TestNgOrange.TestOrangeHRM@5c80cf32]" started-at="2023-11-29T14:49:06 IST" name="selectLocationFromDropdown" finished-at="2023-11-29T14:49:06 IST" duration-ms="63" status="FAIL">
+          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
+            <message>
+              <![CDATA[Element should have been "select" but was "div"
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "div"
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:46)
+at TestNgOrange.TestOrangeHRM.selectLocationFromDropdown(TestOrangeHRM.java:108)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectLocationFromDropdown -->
+        <test-method signature="SearchButton()[pri:9, instance:TestNgOrange.TestOrangeHRM@5c80cf32]" started-at="2023-11-29T14:49:06 IST" name="SearchButton" finished-at="2023-11-29T14:49:06 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchButton -->
+        <test-method signature="ResetButton()[pri:10, instance:TestNgOrange.TestOrangeHRM@5c80cf32]" started-at="2023-11-29T14:49:06 IST" name="ResetButton" finished-at="2023-11-29T14:49:06 IST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResetButton -->
+        <test-method is-config="true" signature="close()[pri:0, instance:TestNgOrange.TestOrangeHRM@5c80cf32]" started-at="2023-11-29T14:49:06 IST" name="close" finished-at="2023-11-29T14:49:12 IST" duration-ms="5591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestNgOrange.TestOrangeHRM -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
